@@ -2,13 +2,13 @@
 .curso-main-container.pb-3
   BannerInterno(icono="fas fa-sitemap" titulo="Síntesis")
   .container.tarjeta.tarjeta--blanca.p-4.p-md-5
-    p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu tincidunt erat. Fusce cursus mauris in nulla egestas vulputate. Phasellus viverra accumsan libero, sed luctus diam maximus euismod. Mauris sem risus, tincidunt vel libero in, lobortis commodo ante. Sed pulvinar luctus orci in rhoncus. Nulla ut dapibus risus, ac tempor est. Donec nulla augue, vehicula quis malesuada vitae, fermentum non nisi. Donec tincidunt nibh a magna bibendum rutrum. 
+    p El componente formativo aborda los fundamentos y factores que garantizan la continuidad del negocio y la protección de los activos de información en las organizaciones. Se analizan los principios de seguridad, la gestión del riesgo y la importancia de la resiliencia organizacional para mantener las operaciones ante posibles interrupciones. Asimismo, se estudian los tipos de proyectos de continuidad, sus objetivos y beneficios, junto con la estructura del Sistema de Gestión de Continuidad del Negocio (SGCN) y las normas internacionales que lo respaldan, como las ISO 22301 e ISO 27001. Finalmente, se incluyen ejercicios prácticos orientados a la identificación de procesos críticos, el análisis de riesgos y la caracterización de necesidades de seguridad, fortaleciendo las competencias necesarias para garantizar la sostenibilidad y la continuidad operativa en cualquier contexto. 
     
 
     .row.justify-content-center
       .col-lg-10.mb-5.bgs.p-4.brad
         figure
-          img(src="@/assets/curso/temas/sintesis.svg", alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu tincidunt erat. Fusce cursus mauris in nulla egestas vulputate. Phasellus viverra accumsan libero, sed luctus diam maximus euismod. Mauris sem risus, tincidunt vel libero in, lobortis commodo ante. Sed pulvinar luctus orci in rhoncus. Nulla ut dapibus risus, ac tempor est. Donec nulla augue, vehicula quis malesuada vitae, fermentum non nisi. Donec tincidunt nibh a magna bibendum rutrum. ")
+          img(src="@/assets/curso/temas/sintesis.svg", alt="En la síntesis se describe cómo los fundamentos y factores de continuidad del negocio permiten proteger los activos de información y mantener las operaciones ante posibles interrupciones. También se destacan la gestión del riesgo, la resiliencia organizacional y la aplicación del Sistema de Gestión de Continuidad del Negocio (SGCN) como elementos clave para garantizar la sostenibilidad y la seguridad institucional.")
       .col-auto
         a.anexo.mb-5(:href="obtenerLink('/downloads/Sintesis.pdf')" target="_blank")
           .anexo__icono

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="178" height="178" viewBox="0 0 178 178">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_407910" data-name="Rectangle 407910" width="95.188" height="96.215" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Group_1114960" data-name="Group 1114960" transform="translate(-10936.074 8336.024)">
+    <g id="Group_1114456" data-name="Group 1114456" transform="translate(10936.074 -8336.023)">
+      <path id="Path_882862" data-name="Path 882862" d="M89,0A89,89,0,1,1,0,89,89,89,0,0,1,89,0Z" transform="translate(0 -0.001)" fill="#c0afff"/>
+      <path id="Path_882863" data-name="Path 882863" d="M78.668,0A78.668,78.668,0,1,1,0,78.668,78.668,78.668,0,0,1,78.668,0Z" transform="translate(10.332 10.331)" fill="#f3f9ff"/>
+    </g>
+    <g id="Group_1114458" data-name="Group 1114458" transform="translate(10975.074 -8297.023)">
+      <rect id="Rectangle_401104" data-name="Rectangle 401104" width="99.117" height="100.574" fill="none"/>
+      <g id="Group_1114883" data-name="Group 1114883" transform="translate(3.738)">
+        <g id="Group_1114882" data-name="Group 1114882" transform="translate(0 0)" clip-path="url(#clip-path)">
+          <path id="Path_920931" data-name="Path 920931" d="M93.64,8.373v59.59H40v-19.8A23.411,23.411,0,0,0,40,8.743v-.37Z" transform="translate(1.548 0.324)" fill="#eae5ff"/>
+          <rect id="Rectangle_407903" data-name="Rectangle 407903" width="53.64" height="4.655" transform="translate(41.548 68.286)" fill="#d49cfe"/>
+          <rect id="Rectangle_407904" data-name="Rectangle 407904" width="53.64" height="4.654" transform="translate(41.548 72.942)" fill="#eae5ff"/>
+          <rect id="Rectangle_407905" data-name="Rectangle 407905" width="53.64" height="4.655" transform="translate(41.548 77.596)" fill="#d49cfe"/>
+          <rect id="Rectangle_407906" data-name="Rectangle 407906" width="53.64" height="4.653" transform="translate(41.548 82.252)" fill="#eae5ff"/>
+          <rect id="Rectangle_407907" data-name="Rectangle 407907" width="53.64" height="4.655" transform="translate(41.548 86.905)" fill="#d49cfe"/>
+          <rect id="Rectangle_407908" data-name="Rectangle 407908" width="53.64" height="4.654" transform="translate(41.548 91.56)" fill="#eae5ff"/>
+          <rect id="Rectangle_407909" data-name="Rectangle 407909" width="9.383" height="6.628" transform="translate(12.176 59.808) rotate(-67.075)" fill="#2a2b2b"/>
+          <path id="Path_920932" data-name="Path 920932" d="M10.8,57.019.431,80.608c-2.468,5.828,6.354,9.643,8.851,3.743L19.653,60.765Z" transform="translate(0 2.206)" fill="#7d0ede"/>
+          <path id="Path_920933" data-name="Path 920933" d="M34.7,56.959A28.772,28.772,0,1,1,57.085,22.976,28.783,28.783,0,0,1,34.7,56.959" transform="translate(0.005 0)" fill="#4b4c4c"/>
+          <path id="Path_920934" data-name="Path 920934" d="M40,48.148V8.729a23.411,23.411,0,0,1,0,39.419" transform="translate(1.548 0.337)" fill="#57cbea"/>
+          <path id="Path_920935" data-name="Path 920935" d="M41.343,8.867V48.287a23.418,23.418,0,1,1,0-39.419" transform="translate(0.204 0.199)" fill="#85d7e0"/>
+          <path id="Path_920936" data-name="Path 920936" d="M25.141,22.2A3.219,3.219,0,1,1,26.7,17.921,3.219,3.219,0,0,1,25.141,22.2" transform="translate(0.796 0.621)" fill="#a0eef2"/>
+          <path id="Path_920937" data-name="Path 920937" d="M76.268,35.32H56.124V15.176H76.268ZM58.613,32.833H73.781V17.666H58.613Z" transform="translate(2.171 0.587)" fill="#2a2b2b"/>
+          <path id="Path_920938" data-name="Path 920938" d="M70.429,21.054l-5.523,5.522L61.631,23.3l-1.206,1.207,4.481,4.481,6.729-6.729Z" transform="translate(2.338 0.814)" fill="#9d0388"/>
+          <path id="Path_920939" data-name="Path 920939" d="M76.268,59.514H56.124V39.37H76.268ZM58.613,57.026H73.781V41.859H58.613Z" transform="translate(2.171 1.523)" fill="#2a2b2b"/>
+          <path id="Path_920940" data-name="Path 920940" d="M70.429,45.248,64.906,50.77l-3.275-3.275L60.425,48.7l4.481,4.481,6.729-6.729Z" transform="translate(2.338 1.75)" fill="#9d0388"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
