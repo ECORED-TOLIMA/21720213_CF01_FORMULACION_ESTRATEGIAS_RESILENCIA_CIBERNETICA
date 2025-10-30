@@ -45,6 +45,11 @@
     background-image: url("../assets/curso/portada/fondo-banner-principal.png")
     background-size: cover
     background-position: center
+    @media (max-width: $bp-max-md)
+      background-image: url("../assets/curso/portada/fondo-banner-principal-md.png")
+    @media (max-width: $bp-max-xs)
+      background-image: url("../assets/curso/portada/fondo-banner-principal-sm.png")
+
 .banner-interno__fondo
   background-image: url("../assets/curso/portada/banner.png") !important
   background-size: cover
@@ -80,6 +85,8 @@
   margin-inline: -3rem !important
   @media (max-width: $bp-max-sm)
     margin-inline: -1.5rem !important
+  span
+    color: $color-sistema-texto
 .tarjeta--BG03
   background-image: url("../assets/curso/temas/BG03.png")
   background-size: cover
@@ -100,6 +107,12 @@
   background-repeat: no-repeat
   h4, p, span
     color: $white
+.tarjeta--BG08
+  background: #E9D6FA
+.tarjeta.tarjeta-slide.arriba.color-secundario
+  background-color: #E9D6FA
+  *
+    color: black !important
 
 //- tarjetas cambio de color HOVER
 .bg
@@ -130,7 +143,6 @@
     border-radius: 20px 
   &.crd--grayGrad
     padding: 2rem
-    height: 100%
     background-image: url('../assets/curso/temas/BG05.png')
     background-size: cover
     background-repeat: no-repeat
@@ -164,8 +176,8 @@
     top: 50%
     left: 50%
     transform: translate(-50%,-50%)
-    width: 160px
-    height: 160px
+    width: 120px
+    height: 120px
     background-color: #A3C932
     border-radius: 999px
   
@@ -195,12 +207,29 @@
 //- Modulo tablas
 .table
   width: 100%
-  table-layout: fixed
   border-collapse: collapse
+  table-layout: fixed
+  word-wrap: break-word
+  white-space: normal
 thead
   tr
     th
       background-color: #C0AFFF
+.tabla-a.responsive
+  width: 100%
+  overflow-x: auto
+  -webkit-overflow-scrolling: touch
+  border-radius: 8px
+  th, td
+  padding: 0.75rem
+  text-align: left
+  vertical-align: top
+  word-break: break-word
+  hyphens: auto
+@media (max-width: 768px)
+  th, td
+    font-size: 0.85rem
+    padding: 0.5rem
 
 //- Modulo slyder
 .tarjeta--slyder  
@@ -238,6 +267,8 @@ thead
   width: 50px
 .img100
   width: 100px
+.img120
+  width: 120px
 .img130
   width: 130px
 .img150

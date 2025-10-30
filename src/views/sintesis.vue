@@ -6,7 +6,7 @@
     
 
     .row.justify-content-center
-      .col-lg-10.mb-5.bgs.p-4.brad
+      .col-12.mb-5.bgs.p-4.brad
         figure
           img(src="@/assets/curso/temas/sintesis.svg", alt="En la síntesis se describe cómo los fundamentos y factores de continuidad del negocio permiten proteger los activos de información y mantener las operaciones ante posibles interrupciones. También se destacan la gestión del riesgo, la resiliencia organizacional y la aplicación del Sistema de Gestión de Continuidad del Negocio (SGCN) como elementos clave para garantizar la sostenibilidad y la seguridad institucional.")
       .col-auto

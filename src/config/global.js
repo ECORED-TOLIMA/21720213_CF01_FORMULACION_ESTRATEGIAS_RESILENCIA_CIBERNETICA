@@ -327,7 +327,7 @@ export default {
       referencia:
         'República de Colombia. (2013). Decreto 1377 de 2013. <em>En uso de sus atribuciones constitucionales, y en particular las previstas en el numeral 11 del artículo 189 de la Constitución Política y en la Ley 1581 de 2012</em>. Reglamentario del Sector de Función Pública.',
       link:
-        'https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=53779',
+        'https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=53646',
     },
     {
       referencia:

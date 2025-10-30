@@ -27,7 +27,7 @@
               .tarjeta.tarjeta--C01.p-3(titulo="Activos de información")
                 p.mb-0 Datos, bases de datos, registros, documentos y sistemas que contienen información crítica.
               .tarjeta.tarjeta--C01.p-3(titulo="Activos tecnológicos")
-                p.mb-0 Hardware, <em>software</em>, redes, servidores, dispositivos de comunicación y sistemas de respaldo.
+                p.mb-0 <em>Hardware</em>, <em>software</em>, redes, servidores, dispositivos de comunicación y sistemas de respaldo.
               .tarjeta.tarjeta--C01.p-3(titulo="Activos humanos")
                 p.mb-0 Conocimientos, habilidades y experiencia del personal clave en la operación.
               .tarjeta.tarjeta--C01.p-3(titulo="Activos físicos")
@@ -80,7 +80,7 @@
         .titulo-sexto.color-acento-contenido
           h5 Tabla 4.
           span <em>Ejemplo de inventario de activos y procesos críticos</em>
-        .tabla-a.color-primario
+        .tabla-a.responsive.color-primario
           table
             thead
               tr
@@ -214,7 +214,7 @@
         .titulo-sexto.color-acento-contenido
           h5 Tabla 5.
           span <em>Ejemplo de matriz de análisis de riesgos y continuidad operativa</em>
-        .tabla-a.color-primario
+        .tabla-a.responsive.color-primario
           table
             thead
               tr

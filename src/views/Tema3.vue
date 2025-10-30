@@ -140,47 +140,107 @@
               p Fomentar una cultura organizacional resiliente, basada en la prevención y la mejora continua.
     p(data-aos="fade-down") El alcance de los proyectos de continuidad depende del tamaño de la organización, su estructura operativa, los recursos disponibles y los riesgos a los que se encuentra expuesta. Puede abarcar desde un solo proceso crítico hasta todos los sistemas y áreas de la empresa.
     p.mb-5(data-aos="fade-down") Ejemplos de alcance según el tipo de organización:
-    .row.justify-content-center.mb-4
-      .col-xl-3.col-lg-6.col-md-8.col-12.mb-xl-0
-        .crd_hover_txt1.mb-4(data-aos="flip-left")(@mouseover="mostrarIndicador = true")
-          .indicador--hover(v-if="mostrarIndicador")
-          .crd_hover_txt1--img
-            figure
-              img(src="@/assets/curso/temas/tema3/img13.png", alt="Imagen decorativa")
-          .crd_hover_txt1--body
-            h5.t1.mb-3 Empresa industrial
-            h5.t2.mb-2 Empresa industrial
+    .desktop
+      .row.mb-5
+        .col-6.col-md-3.mb-4.mb-xl-0
+          .tarjeta.tarjeta-slide.arriba.color-secundario(@mouseover="indicadorTarjetaSlide = false")
+            .indicador--hover(v-if="indicadorTarjetaSlide")
+            .tarjeta-slide__contenedor
+              .tarjeta-slide__contenido.p-auto.p-xl-5
+                h4 Empresa industrial
+                p.mb-0 Un proyecto puede enfocarse en la continuidad de la línea de producción y la protección de la cadena de suministro, asegurando la disponibilidad de materias primas y maquinaria ante interrupciones.
+              .tarjeta-slide__img(:style="{'background-image': `url(${require('@/assets/curso/temas/tema3/img13.svg')})`}")
+        .col-6.col-md-3.mb-4.mb-xl-0
+          .tarjeta.tarjeta-slide.arriba.color-secundario(@mouseover="indicadorTarjetaSlide = false")
+            .tarjeta-slide__contenedor
+              .tarjeta-slide__img(:style="{'background-image': `url(${require('@/assets/curso/temas/tema3/img14.svg')})`}")
+              .tarjeta-slide__contenido.p-auto.p-xl-5
+                h4 Entidad financiera
+                p.mb-0 Puede centrarse en garantizar la operatividad de los sistemas de pago, la atención al cliente y la protección de la información confidencial.
+        .col-6.col-md-3.mb-4.mb-xl-0
+          .tarjeta.tarjeta-slide.arriba.color-secundario(@mouseover="indicadorTarjetaSlide = false")
+            .tarjeta-slide__contenedor
+              .tarjeta-slide__img(:style="{'background-image': `url(${require('@/assets/curso/temas/tema3/img15.svg')})`}")
+              .tarjeta-slide__contenido.p-auto.p-xl-5
+                h4 Institución educativa
+                p.mb-0 El proyecto podría incluir la disponibilidad de plataformas virtuales, sistemas académicos y servicios administrativos ante fallas tecnológicas.
+        .col-6.col-md-3.mb-4.mb-xl-0
+          .tarjeta.tarjeta-slide.arriba.color-secundario(@mouseover="indicadorTarjetaSlide = false")
+            .tarjeta-slide__contenedor
+              .tarjeta-slide__img(:style="{'background-image': `url(${require('@/assets/curso/temas/tema3/img16.svg')})`}")
+              .tarjeta-slide__contenido.p-auto.p-xl-5
+                h4 Entidad pública
+                p.mb-0 Su alcance puede orientarse a la continuidad de los servicios ciudadanos y la preservación de datos institucionales frente a incidentes o ataques cibernéticos.
+    .movil
+      .row.justify-content-center.align-items-center.mb-5
+        .col-md-10.col-12
+          .tarjeta.tarjeta--BG08.p-4
+            figure.mb-3
+              img(src='@/assets/curso/temas/tema3/img13_1.png', alt='Imagen decorativa')
+            h4 Empresa industrial
             p.mb-0 Un proyecto puede enfocarse en la continuidad de la línea de producción y la protección de la cadena de suministro, asegurando la disponibilidad de materias primas y maquinaria ante interrupciones.
-      .col-xl-3.col-lg-6.col-md-8.col-12.mb-xl-0
-        .crd_hover_txt1.mb-4(data-aos="flip-left")(@mouseover="mostrarIndicador = true")
-          .indicador--hover(v-if="mostrarIndicador")
-          .crd_hover_txt1--img
-            figure
-              img(src="@/assets/curso/temas/tema3/img14.png", alt="Imagen decorativa")
-          .crd_hover_txt1--body
-            h5.t1.mb-3 Entidad financiera
-            h5.t2.mb-2 Entidad financiera
+      .row.justify-content-center.align-items-center.mb-5
+        .col-md-10.col-12
+          .tarjeta.tarjeta--BG08.p-4
+            figure.mb-3
+              img(src='@/assets/curso/temas/tema3/img14_1.png', alt='Imagen decorativa')
+            h4 Entidad financiera
             p.mb-0 Puede centrarse en garantizar la operatividad de los sistemas de pago, la atención al cliente y la protección de la información confidencial.
-      .col-xl-3.col-lg-6.col-md-8.col-12.mb-xl-0
-        .crd_hover_txt1.mb-4(data-aos="flip-left")(@mouseover="mostrarIndicador = true")
-          .indicador--hover(v-if="mostrarIndicador")
-          .crd_hover_txt1--img
-            figure
-              img(src="@/assets/curso/temas/tema3/img15.png", alt="Imagen decorativa")
-          .crd_hover_txt1--body
-            h5.t1.mb-3 Institución educativa
-            h5.t2.mb-2 Institución educativa
+      .row.justify-content-center.align-items-center.mb-5
+        .col-md-10.col-12
+          .tarjeta.tarjeta--BG08.p-4
+            figure.mb-3
+              img(src='@/assets/curso/temas/tema3/img15_1.png', alt='Imagen decorativa')
+            h4 Institución educativa
             p.mb-0 El proyecto podría incluir la disponibilidad de plataformas virtuales, sistemas académicos y servicios administrativos ante fallas tecnológicas.
-      .col-xl-3.col-lg-6.col-md-8.col-12.mb-xl-0
-        .crd_hover_txt1.mb-4(data-aos="flip-left")(@mouseover="mostrarIndicador = true")
-          .indicador--hover(v-if="mostrarIndicador")
-          .crd_hover_txt1--img
-            figure
-              img(src="@/assets/curso/temas/tema3/img16.png", alt="Imagen decorativa")
-          .crd_hover_txt1--body
-            h5.t1.mb-3 Entidad pública
-            h5.t2.mb-2 Entidad pública
+      .row.justify-content-center.align-items-center.mb-5
+        .col-md-10.col-12
+          .tarjeta.tarjeta--BG08.p-4
+            figure.mb-3
+              img(src='@/assets/curso/temas/tema3/img16_1.png', alt='Imagen decorativa')
+            h4 Entidad pública
             p.mb-0 Su alcance puede orientarse a la continuidad de los servicios ciudadanos y la preservación de datos institucionales frente a incidentes o ataques cibernéticos.
+    //- .row.justify-content-center.mb-4
+    //-   .col-xl-3.col-lg-6.col-md-8.col-12.mb-xl-0
+    //-     .crd_hover_txt1.mb-4(data-aos="flip-left")(@mouseover="mostrarIndicador = true")
+    //-       .indicador--hover(v-if="mostrarIndicador")
+    //-       .crd_hover_txt1--img
+    //-         figure
+    //-           img(src="@/assets/curso/temas/tema3/img13.png", alt="Imagen decorativa")
+    //-       .crd_hover_txt1--body
+    //-         h5.t1.mb-3 Empresa industrial
+    //-         h5.t2.mb-2 Empresa industrial
+    //-         p.mb-0 Un proyecto puede enfocarse en la continuidad de la línea de producción y la protección de la cadena de suministro, asegurando la disponibilidad de materias primas y maquinaria ante interrupciones.
+    //-   .col-xl-3.col-lg-6.col-md-8.col-12.mb-xl-0
+    //-     .crd_hover_txt1.mb-4(data-aos="flip-left")(@mouseover="mostrarIndicador = true")
+    //-       .indicador--hover(v-if="mostrarIndicador")
+    //-       .crd_hover_txt1--img
+    //-         figure
+    //-           img(src="@/assets/curso/temas/tema3/img14.png", alt="Imagen decorativa")
+    //-       .crd_hover_txt1--body
+    //-         h5.t1.mb-3 Entidad financiera
+    //-         h5.t2.mb-2 Entidad financiera
+    //-         p.mb-0 Puede centrarse en garantizar la operatividad de los sistemas de pago, la atención al cliente y la protección de la información confidencial.
+    //-   .col-xl-3.col-lg-6.col-md-8.col-12.mb-xl-0
+    //-     .crd_hover_txt1.mb-4(data-aos="flip-left")(@mouseover="mostrarIndicador = true")
+    //-       .indicador--hover(v-if="mostrarIndicador")
+    //-       .crd_hover_txt1--img
+    //-         figure
+    //-           img(src="@/assets/curso/temas/tema3/img15.png", alt="Imagen decorativa")
+    //-       .crd_hover_txt1--body
+    //-         h5.t1.mb-3 Institución educativa
+    //-         h5.t2.mb-2 Institución educativa
+    //-         p.mb-0 El proyecto podría incluir la disponibilidad de plataformas virtuales, sistemas académicos y servicios administrativos ante fallas tecnológicas.
+    //-   .col-xl-3.col-lg-6.col-md-8.col-12.mb-xl-0
+    //-     .crd_hover_txt1.mb-4(data-aos="flip-left")(@mouseover="mostrarIndicador = true")
+    //-       .indicador--hover(v-if="mostrarIndicador")
+    //-       .crd_hover_txt1--img
+    //-         figure
+    //-           img(src="@/assets/curso/temas/tema3/img16.png", alt="Imagen decorativa")
+    //-       .crd_hover_txt1--body
+    //-         h5.t1.mb-3 Entidad pública
+    //-         h5.t2.mb-2 Entidad pública
+    //-         p.mb-0 Su alcance puede orientarse a la continuidad de los servicios ciudadanos y la preservación de datos institucionales frente a incidentes o ataques cibernéticos.
     p.mb-0(data-aos="fade-down") En todos los casos, definir con claridad el objetivo y alcance del proyecto permite priorizar los procesos esenciales, optimizar los recursos y asegurar que las estrategias implementadas sean coherentes con las necesidades reales de la organización. Esto facilita una respuesta estructurada, coordinada y eficaz ante cualquier evento que amenace la continuidad del negocio.    
     separador
     #t_3_3.titulo-segundo.color-acento-contenido(data-aos="flip-up")

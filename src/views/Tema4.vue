@@ -51,7 +51,8 @@
     #t_4_1.titulo-segundo.color-acento-contenido(data-aos="flip-up")
       h2 4.1 Identificación y análisis de riesgos operativos y tecnológicos
     
-    p.mb-5(data-aos="fade-down") La identificación y análisis de riesgos operativos y tecnológicos constituye una etapa esencial dentro del proceso de gestión del riesgo y de la planificación de la continuidad del negocio. Su propósito es reconocer las amenazas que pueden afectar los activos críticos, los procesos esenciales y la infraestructura tecnológica de la organización, evaluando la probabilidad de su ocurrencia y el impacto potencial sobre las operaciones.
+    p(data-aos="fade-down") La identificación y análisis de riesgos operativos y tecnológicos constituye una etapa esencial dentro del proceso de gestión del riesgo y de la planificación de la continuidad del negocio. Su propósito es reconocer las amenazas que pueden afectar los activos críticos, los procesos esenciales y la infraestructura tecnológica de la organización, evaluando la probabilidad de su ocurrencia y el impacto potencial sobre las operaciones.
+    p.mb-4(data-aos="fade-down") Desde una perspectiva organizacional, el riesgo operativo se define como la posibilidad de pérdida o afectación derivada de fallos en los procesos internos, errores humanos, deficiencias en los sistemas o eventos externos que alteren el funcionamiento normal de la entidad. Por su parte, el riesgo tecnológico está relacionado con las vulnerabilidades en los sistemas informáticos, redes, plataformas digitales y dispositivos, cuya explotación o falla puede comprometer la disponibilidad, integridad o confidencialidad de la información.
     .row.justify-content-center.mb-4
       .col-lg-10.col-12
         .cajon.cajon.C02.color-secundario.p-4
@@ -66,58 +67,118 @@
           template(v-slot:imagen)
             figure.mb-5
               img(src='@/assets/curso/temas/tema4/img03.svg', alt="Imagen decorativa")
-          .tarjeta.color-acento-botones.p-3(x="17%" y="18%" numero="01")
+          .tarjeta.color-acento-botones.p-3(x="17%" y="18%" numero="1")
             p Errores de operación, negligencia, desconocimiento de procedimientos o falta de capacitación del personal.
-          .tarjeta.color-acento-botones.p-3(x="17%" y="50%" numero="02")
+          .tarjeta.color-acento-botones.p-3(x="17%" y="50%" numero="2")
             p Fallas en <em>hardware</em>, <em>software</em>, redes o servicios tecnológicos esenciales.
-          .tarjeta.color-acento-botones.p-3(x="84%" y="10%" numero="03")
+          .tarjeta.color-acento-botones.p-3(x="84%" y="10%" numero="3")
             p Incendios, inundaciones, cortes eléctricos, desastres naturales u otros eventos que afecten la infraestructura.
-          .tarjeta.color-acento-botones.p-3(x="84%" y="40%" numero="04")
+          .tarjeta.color-acento-botones.p-3(x="84%" y="40%" numero="4")
             p Ciberataques, sabotajes, fallos en servicios de terceros o interrupciones en la cadena de suministro.
-          .tarjeta.color-acento-botones.p-3(x="84%" y="73%" numero="05")
+          .tarjeta.color-acento-botones.p-3(x="84%" y="73%" numero="5")
             p Ausencia de políticas de seguridad, deficiencias en el control interno o falta de mantenimiento preventivo.
     p.mb-5(data-aos="fade-down") El proceso de identificación de riesgos debe desarrollarse de forma sistemática y participativa, involucrando a las áreas claves de la organización para garantizar una visión integral. Entre las principales herramientas empleadas se encuentran:
-    .row.justify-content-center.mb-4
-      .col-xl-3.col-lg-6.col-md-8.col-12.mb-xl-0
-        .crd_hover_txt1.mb-4(data-aos="flip-left")(@mouseover="mostrarIndicador = true")
-          .indicador--hover(v-if="mostrarIndicador")
-          .crd_hover_txt1--img
-            figure
-              img(src="@/assets/curso/temas/tema4/img05.png", alt="Imagen decorativa")
-          .crd_hover_txt1--body
-            h5.t1.mb-3 Matrices de riesgo
-            h5.t2.mb-2 Matrices de riesgo
+    .desktop
+      .row.mb-5
+        .col-6.col-md-3.mb-4.mb-xl-0
+          .tarjeta.tarjeta-slide.arriba.color-secundario(@mouseover="indicadorTarjetaSlide = false")
+            .indicador--hover(v-if="indicadorTarjetaSlide")
+            .tarjeta-slide__contenedor
+              .tarjeta-slide__contenido.p-auto.p-xl-5
+                h4 Matrices de riesgo
+                p.mb-0 Instrumentos que permiten listar las amenazas, estimar su probabilidad e impacto y priorizar las más críticas.
+              .tarjeta-slide__img(:style="{'background-image': `url(${require('@/assets/curso/temas/tema4/img05.svg')})`}")
+        .col-6.col-md-3.mb-4.mb-xl-0
+          .tarjeta.tarjeta-slide.arriba.color-secundario(@mouseover="indicadorTarjetaSlide = false")
+            .tarjeta-slide__contenedor
+              .tarjeta-slide__img(:style="{'background-image': `url(${require('@/assets/curso/temas/tema4/img06.svg')})`}")
+              .tarjeta-slide__contenido.p-auto.p-xl-5
+                h4 Análisis FODA de riesgos
+                p.mb-0 Identifica fortalezas, oportunidades, debilidades y amenazas relacionadas con los activos y procesos clave.
+        .col-6.col-md-3.mb-4.mb-xl-0
+          .tarjeta.tarjeta-slide.arriba.color-secundario(@mouseover="indicadorTarjetaSlide = false")
+            .tarjeta-slide__contenedor
+              .tarjeta-slide__img(:style="{'background-image': `url(${require('@/assets/curso/temas/tema4/img07.svg')})`}")
+              .tarjeta-slide__contenido.p-auto.p-xl-5
+                h4 Entrevistas y talleres con expertos
+                p.mb-0 Facilitan la detección de vulnerabilidades no evidentes en los procedimientos operativos o tecnológicos.
+        .col-6.col-md-3.mb-4.mb-xl-0
+          .tarjeta.tarjeta-slide.arriba.color-secundario(@mouseover="indicadorTarjetaSlide = false")
+            .tarjeta-slide__contenedor
+              .tarjeta-slide__img(:style="{'background-image': `url(${require('@/assets/curso/temas/tema4/img08.svg')})`}")
+              .tarjeta-slide__contenido.p-auto.p-xl-5
+                h4 Revisión de incidentes pasados
+                p.mb-0 Permite aprender de experiencias previas y fortalecer las medidas de prevención y respuesta.
+    .movil
+      .row.justify-content-center.align-items-center.mb-5
+        .col-md-10.col-12
+          .tarjeta.tarjeta--BG08.p-4
+            figure.mb-3
+              img(src='@/assets/curso/temas/tema4/img05_1.png', alt='Imagen decorativa')
+            h4 Matrices de riesgo
             p.mb-0 Instrumentos que permiten listar las amenazas, estimar su probabilidad e impacto y priorizar las más críticas.
-      .col-xl-3.col-lg-6.col-md-8.col-12.mb-xl-0
-        .crd_hover_txt1.mb-4(data-aos="flip-left")(@mouseover="mostrarIndicador = true")
-          .indicador--hover(v-if="mostrarIndicador")
-          .crd_hover_txt1--img
-            figure
-              img(src="@/assets/curso/temas/tema4/img06.png", alt="Imagen decorativa")
-          .crd_hover_txt1--body
-            h5.t1.mb-3 Análisis FODA de riesgos
-            h5.t2.mb-2 Análisis FODA de riesgos
+      .row.justify-content-center.align-items-center.mb-5
+        .col-md-10.col-12
+          .tarjeta.tarjeta--BG08.p-4
+            figure.mb-3
+              img(src='@/assets/curso/temas/tema4/img06_1.png', alt='Imagen decorativa')
+            h4 Análisis FODA de riesgos
             p.mb-0 Identifica fortalezas, oportunidades, debilidades y amenazas relacionadas con los activos y procesos clave.
-      .col-xl-3.col-lg-6.col-md-8.col-12.mb-xl-0
-        .crd_hover_txt1.mb-4(data-aos="flip-left")(@mouseover="mostrarIndicador = true")
-          .indicador--hover(v-if="mostrarIndicador")
-          .crd_hover_txt1--img
-            figure
-              img(src="@/assets/curso/temas/tema4/img07.png", alt="Imagen decorativa")
-          .crd_hover_txt1--body
-            h5.t1.mb-3 Entrevistas y talleres con expertos
-            h5.t2.mb-2 Entrevistas y talleres con expertos
+      .row.justify-content-center.align-items-center.mb-5
+        .col-md-10.col-12
+          .tarjeta.tarjeta--BG08.p-4
+            figure.mb-3
+              img(src='@/assets/curso/temas/tema4/img07_1.png', alt='Imagen decorativa')
+            h4 Entrevistas y talleres con expertos
             p.mb-0 Facilitan la detección de vulnerabilidades no evidentes en los procedimientos operativos o tecnológicos.
-      .col-xl-3.col-lg-6.col-md-8.col-12.mb-xl-0
-        .crd_hover_txt1.mb-4(data-aos="flip-left")(@mouseover="mostrarIndicador = true")
-          .indicador--hover(v-if="mostrarIndicador")
-          .crd_hover_txt1--img
-            figure
-              img(src="@/assets/curso/temas/tema4/img08.png", alt="Imagen decorativa")
-          .crd_hover_txt1--body
-            h5.t1.mb-3 Revisión de incidentes pasados
-            h5.t2.mb-2 Revisión de incidentes pasados
+      .row.justify-content-center.align-items-center.mb-5
+        .col-md-10.col-12
+          .tarjeta.tarjeta--BG08.p-4
+            figure.mb-3
+              img(src='@/assets/curso/temas/tema4/img08_1.png', alt='Imagen decorativa')
+            h4 Revisión de incidentes pasados
             p.mb-0 Permite aprender de experiencias previas y fortalecer las medidas de prevención y respuesta.
+    //- .row.justify-content-center.mb-4
+    //-   .col-xl-3.col-lg-6.col-md-8.col-12.mb-xl-0
+    //-     .crd_hover_txt1.mb-4(data-aos="flip-left")(@mouseover="mostrarIndicador = true")
+    //-       .indicador--hover(v-if="mostrarIndicador")
+    //-       .crd_hover_txt1--img
+    //-         figure
+    //-           img(src="@/assets/curso/temas/tema4/img05.png", alt="Imagen decorativa")
+    //-       .crd_hover_txt1--body
+    //-         h5.t1.mb-3 Matrices de riesgo
+    //-         h5.t2.mb-2 Matrices de riesgo
+    //-         p.mb-0 Instrumentos que permiten listar las amenazas, estimar su probabilidad e impacto y priorizar las más críticas.
+    //-   .col-xl-3.col-lg-6.col-md-8.col-12.mb-xl-0
+    //-     .crd_hover_txt1.mb-4(data-aos="flip-left")(@mouseover="mostrarIndicador = true")
+    //-       .indicador--hover(v-if="mostrarIndicador")
+    //-       .crd_hover_txt1--img
+    //-         figure
+    //-           img(src="@/assets/curso/temas/tema4/img06.png", alt="Imagen decorativa")
+    //-       .crd_hover_txt1--body
+    //-         h5.t1.mb-3 Análisis FODA de riesgos
+    //-         h5.t2.mb-2 Análisis FODA de riesgos
+    //-         p.mb-0 Identifica fortalezas, oportunidades, debilidades y amenazas relacionadas con los activos y procesos clave.
+    //-   .col-xl-3.col-lg-6.col-md-8.col-12.mb-xl-0
+    //-     .crd_hover_txt1.mb-4(data-aos="flip-left")(@mouseover="mostrarIndicador = true")
+    //-       .indicador--hover(v-if="mostrarIndicador")
+    //-       .crd_hover_txt1--img
+    //-         figure
+    //-           img(src="@/assets/curso/temas/tema4/img07.png", alt="Imagen decorativa")
+    //-       .crd_hover_txt1--body
+    //-         h5.t1.mb-3 Entrevistas y talleres con expertos
+    //-         h5.t2.mb-2 Entrevistas y talleres con expertos
+    //-         p.mb-0 Facilitan la detección de vulnerabilidades no evidentes en los procedimientos operativos o tecnológicos.
+    //-   .col-xl-3.col-lg-6.col-md-8.col-12.mb-xl-0
+    //-     .crd_hover_txt1.mb-4(data-aos="flip-left")(@mouseover="mostrarIndicador = true")
+    //-       .indicador--hover(v-if="mostrarIndicador")
+    //-       .crd_hover_txt1--img
+    //-         figure
+    //-           img(src="@/assets/curso/temas/tema4/img08.png", alt="Imagen decorativa")
+    //-       .crd_hover_txt1--body
+    //-         h5.t1.mb-3 Revisión de incidentes pasados
+    //-         h5.t2.mb-2 Revisión de incidentes pasados
+    //-         p.mb-0 Permite aprender de experiencias previas y fortalecer las medidas de prevención y respuesta.
     p.mb-5(data-aos="fade-down") Una vez identificados los riesgos, se realiza su análisis, que consiste en evaluar la probabilidad de ocurrencia y el nivel de impacto sobre los objetivos organizacionales. Esta etapa facilita la priorización de los riesgos y la definición de acciones de mitigación adecuadas. El análisis puede ser cualitativo, basado en juicios de expertos y escalas descriptivas (alto, medio, bajo), o cuantitativo, utilizando métricas y datos históricos para calcular pérdidas potenciales y tiempos de recuperación.
     .row.justify-content-center.mb-4
       .col-lg-5.order-lg-1.order-2
@@ -135,22 +196,22 @@
         .row.justify-content-center.mb-3
           .col-4
             img(src='@/assets/curso/temas/tema4/img10.svg' alt='AvatarTop')
-        h5.text-center(data-aos="fade-down") Prevenir interrupciones operativas significativas.
+        p.text-center(data-aos="fade-down") Prevenir interrupciones operativas significativas.
       .col-md-6.col-lg.tarjeta--tabla.p-4
         .row.justify-content-center.mb-3
           .col-4
             img(src='@/assets/curso/temas/tema4/img11.svg' alt='AvatarTop')
-        h5.text-center(data-aos="fade-down") Optimizar los tiempos de respuesta ante emergencias.
+        p.text-center(data-aos="fade-down") Optimizar los tiempos de respuesta ante emergencias.
       .col-md-6.col-lg.tarjeta--tabla.p-4
         .row.justify-content-center.mb-3
           .col-4
             img(src='@/assets/curso/temas/tema4/img12.svg' alt='AvatarTop')
-        h5.text-center(data-aos="fade-down") Fortalecer la confianza de clientes, usuarios y aliados.
+        p.text-center(data-aos="fade-down") Fortalecer la confianza de clientes, usuarios y aliados.
       .col-md-6.col-lg.tarjeta--tabla.p-4
         .row.justify-content-center.mb-3
           .col-4
             img(src='@/assets/curso/temas/tema4/img13.svg' alt='AvatarTop')
-        h5.text-center(data-aos="fade-down") Cumplir con normativas internacionales como la ISO 31000 (Gestión del riesgo) y la ISO 22301 (Continuidad del negocio).
+        p.text-center(data-aos="fade-down") Cumplir con normativas internacionales como la ISO 31000 (Gestión del riesgo) y la ISO 22301 (Continuidad del negocio).
         
     p.mb-0(data-aos="fade-down") En síntesis, el análisis de riesgos operativos y tecnológicos permite anticipar escenarios adversos y diseñar estrategias preventivas que fortalezcan la resiliencia organizacional, asegurando la sostenibilidad y competitividad de la entidad frente a los desafíos del entorno.
 
@@ -223,21 +284,21 @@
         .crd.crd--grayGrad(data-aos="flip-left")
           .bottomCircle.mb-5
             figure
-              img(src="@/assets/curso/temas/tema4/img17.svg", alt="Imagen decorativa").img130.m-auto
+              img(src="@/assets/curso/temas/tema4/img17.svg", alt="Imagen decorativa").img100.m-auto
           h4.text-center RTO (Recovery Time Objective)
           p.mb-0 Tiempo máximo de recuperación permitido para un proceso o sistema.
       .col-xl-4.col-lg-8.mb-4.mb-xl-5
         .crd.crd--grayGrad(data-aos="flip-left")
           .bottomCircle.mb-5
             figure
-              img(src="@/assets/curso/temas/tema4/img18.svg", alt="Imagen decorativa").img130.m-auto
+              img(src="@/assets/curso/temas/tema4/img18.svg", alt="Imagen decorativa").img100.m-auto
           h4.text-center RPO (Recovery Point Objective)
           p.mb-0 Punto máximo de pérdida de datos aceptable.
       .col-xl-4.col-lg-8.mb-4.mb-xl-5
         .crd.crd--grayGrad(data-aos="flip-left")
           .bottomCircle.mb-5
             figure
-              img(src="@/assets/curso/temas/tema4/img19.svg", alt="Imagen decorativa").img130.m-auto
+              img(src="@/assets/curso/temas/tema4/img19.svg", alt="Imagen decorativa").img100.m-auto
           h4.text-center MTD (Maximum Tolerable Downtime)
           p.mb-0 Tiempo máximo que la organización puede soportar sin ejecutar un proceso crítico.
     .row.justify-content-center.mb-0
@@ -281,38 +342,38 @@
               .tarjeta.tarjeta--slyder.p-4
                 .row.justify-content-center.mb-3
                   .col-6.col-lg-8
-                    img(src="@/assets/curso/temas/tema4/img23.svg", alt="alt").img100.m-auto
-                P Implementación de controles de seguridad de la información, tales como autenticación multifactor, cifrado de datos y gestión de accesos.
+                    img(src="@/assets/curso/temas/tema4/img23.svg", alt="alt").img80.m-auto
+                P.mb-0 Implementación de controles de seguridad de la información, tales como autenticación multifactor, cifrado de datos y gestión de accesos.
               .tarjeta.tarjeta--slyder.p-4
                 .row.justify-content-center.mb-3
                   .col-6.col-lg-8
-                    img(src="@/assets/curso/temas/tema4/img24.svg", alt="alt").img100.m-auto
-                P Diseño de planes de contingencia y continuidad, que definan roles, responsabilidades, protocolos de comunicación y procedimientos de recuperación.
+                    img(src="@/assets/curso/temas/tema4/img24.svg", alt="alt").img80.m-auto
+                P.mb-0 Diseño de planes de contingencia y continuidad, que definan roles, responsabilidades, protocolos de comunicación y procedimientos de recuperación.
               .tarjeta.tarjeta--slyder.p-4
                 .row.justify-content-center.mb-3
                   .col-6.col-lg-8
-                    img(src="@/assets/curso/temas/tema4/img25.svg", alt="alt").img100.m-auto
-                P Redundancia tecnológica, mediante la duplicación de sistemas críticos, servidores espejo o respaldos automáticos para garantizar la disponibilidad de la información.
+                    img(src="@/assets/curso/temas/tema4/img25.svg", alt="alt").img80.m-auto
+                P.mb-0 Redundancia tecnológica, mediante la duplicación de sistemas críticos, servidores espejo o respaldos automáticos para garantizar la disponibilidad de la información.
               .tarjeta.tarjeta--slyder.p-4
                 .row.justify-content-center.mb-3
                   .col-6.col-lg-8
-                    img(src="@/assets/curso/temas/tema4/img26.svg", alt="alt").img100.m-auto
-                P Capacitación y sensibilización del personal, orientada a promover buenas prácticas de seguridad y respuesta ante incidentes.
+                    img(src="@/assets/curso/temas/tema4/img26.svg", alt="alt").img80.m-auto
+                P.mb-0 Capacitación y sensibilización del personal, orientada a promover buenas prácticas de seguridad y respuesta ante incidentes.
               .tarjeta.tarjeta--slyder.p-4
                 .row.justify-content-center.mb-3
                   .col-6.col-lg-8
-                    img(src="@/assets/curso/temas/tema4/img27.svg", alt="alt").img100.m-auto
-                P Gestión de proveedores críticos, asegurando que las entidades externas también mantengan estándares adecuados de seguridad y continuidad.
+                    img(src="@/assets/curso/temas/tema4/img27.svg", alt="alt").img80.m-auto
+                P.mb-0 Gestión de proveedores críticos, asegurando que las entidades externas también mantengan estándares adecuados de seguridad y continuidad.
               .tarjeta.tarjeta--slyder.p-4
                 .row.justify-content-center.mb-3
                   .col-6.col-lg-8
-                    img(src="@/assets/curso/temas/tema4/img28.svg", alt="alt").img100.m-auto
-                P Simulacros y pruebas periódicas, que permitan validar la eficacia de las estrategias y detectar oportunidades de mejora.
+                    img(src="@/assets/curso/temas/tema4/img28.svg", alt="alt").img80.m-auto
+                P.mb-0 Simulacros y pruebas periódicas, que permitan validar la eficacia de las estrategias y detectar oportunidades de mejora.
               .tarjeta.tarjeta--slyder.p-4
                 .row.justify-content-center.mb-3
                   .col-6.col-lg-8
-                    img(src="@/assets/curso/temas/tema4/img29.svg", alt="alt").img100.m-auto
-                P Análisis post-incidente, para identificar causas raíz, evaluar la efectividad de las acciones correctivas y fortalecer la capacidad de respuesta institucional.
+                    img(src="@/assets/curso/temas/tema4/img29.svg", alt="alt").img80.m-auto
+                P.mb-0 Análisis post-incidente, para identificar causas raíz, evaluar la efectividad de las acciones correctivas y fortalecer la capacidad de respuesta institucional.
     p(data-aos="fade-down") Estas medidas no solo disminuyen la vulnerabilidad operativa y tecnológica, sino que fomentan una cultura organizacional proactiva, donde la prevención, la adaptación y la mejora continua se convierten en principios fundamentales de gestión.
     p.mb-5(data-aos="fade-down") A continuación, se presenta un ejemplo práctico:
     .row.justify-content-center.mb-4
