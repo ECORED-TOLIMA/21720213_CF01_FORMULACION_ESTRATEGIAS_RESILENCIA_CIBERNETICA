@@ -228,7 +228,7 @@
           p(data-aos="fade-down") El impacto, por su parte, corresponde a la magnitud de las consecuencias que tendría la ocurrencia del riesgo sobre los objetivos del negocio, la reputación institucional, la seguridad de la información o el cumplimiento normativo. Este puede expresarse en términos financieros, operativos, legales, reputacionales o sociales, dependiendo de la naturaleza de la organización y de los procesos afectados.
           .cajon.cajon.C01.color-primario.p-4.mb-3
             p.mb-0(data-aos="fade-down") La combinación de ambos factores “probabilidad e impacto” permite determinar el nivel de riesgo, que refleja el grado de criticidad o prioridad de atención que debe asignarse a cada evento. En la práctica, este análisis se representa mediante una matriz de evaluación de riesgos, donde se cruzan los niveles de probabilidad e impacto, clasificando los riesgos en categorías como alto, medio o bajo.
-        .col-lg-3.order-lg-1.order-1.mb-3.col-md-5.col-7
+        .col-lg-3.order-lg-1.order-1.mb-3.col-3
           figure(data-aos="fade-up") 
             img(src='@/assets/curso/temas/tema4/img14.png', alt='Imagen decorativa')
     .row.justify-content-center.mb-5(data-aos="flip-up")

@@ -26,7 +26,7 @@
             .p-4
               p.mb-0 La gestión de la seguridad de la información implica la aplicación de políticas, procedimientos y controles diseñados para mitigar riesgos. Estas acciones se enmarcan en normas internacionales como la ISO/IEC 27001, que establece requisitos para implementar un Sistema de Gestión de Seguridad de la Información (SGSI), promoviendo la mejora continua y el cumplimiento normativo.
 
-    p.mb-0(data-aos="fade-down") Asimismo, la seguridad de la información debe integrarse con la cultura organizacional, de modo que todos los colaboradores comprendan su rol en la protección de los datos y en la prevención de incidentes. Una organización que gestiona de forma adecuada sus activos informacionales fortalece su resiliencia frente a amenazas internas y externas, garantizando la confianza de clientes, proveedores y aliados estratégicos.
+    p.mb-0(data-aos="fade-down") Asimismo, la seguridad de la información debe integrarse con la cultura organizacional, de modo que todos los colaboradores comprendan su rol en la protección de los datos y en la prevención de incidentes. Una organización que gestiona de forma adecuada sus activos de información fortalece su resiliencia frente a amenazas internas y externas, garantizando la confianza de clientes, proveedores y aliados estratégicos.
     
     separador
     #t_1_1.titulo-segundo.color-acento-contenido(data-aos="flip-up")

@@ -24,7 +24,7 @@
       .col-lg-10.col-12
         .titulo-sexto.color-acento-contenido
           h5 Figura 1.
-          span <em>ciclo PHVA</em>
+          span <em>Ciclo PHVA</em>
       .row.justify-content-center
         .col-10
           figure.desktop
